@@ -1,0 +1,73 @@
+{
+  "standardMoves" : [
+    {
+      "name": "punch to face"
+    },
+    {
+      "name": "punch to stomach"
+    },
+    {
+      "name": "hook"
+    },
+    {
+      "name": "kick to knee"
+    },
+    {
+      "name": "knee"
+    },
+    {
+      "name": "high kick"
+    },
+    {
+      "name": "front kick"
+    },
+    {
+      "name": "elbow"
+    }
+  ],
+  "concurrentMoves" :[
+    {
+      "name": "With one hand: high punch, low punch"
+    },
+    {
+      "name": "front kick with lunge"
+    },
+    {
+      "name": "knee"
+    },
+    {
+      "name": "front kick, alternating legs"
+    },
+    {
+      "name": "bang on the door"
+    },
+    {
+      "name": "plank and alternate punches"
+    }
+  ],
+  "warmupMoves": [
+    {
+      "name": "Knee circles"
+    },
+    {
+      "name": "Hip circles"
+    },
+    {
+      "name": "Shoulder circles"
+    },
+    {
+      "name": "Jumping jacks"
+    },
+    {
+      "name": "Front jabs"
+    }
+  ],
+  "recoveryMoves": [
+    {
+      "name": "pushups"
+    },
+    {
+      "name": "side stretches"
+    }
+  ]
+}
