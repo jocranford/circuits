@@ -4,4 +4,4 @@ $LOAD_PATH.unshift(libdir) unless $LOAD_PATH.include?(libdir)
 
 require "boxing_circuit"
 
-Circuits::BoxingCircuit.new.create_workout(1, "boxing-moves.json")
+puts Circuits::BoxingCircuit.new.create_workout(1)

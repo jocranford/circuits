@@ -1,6 +1,6 @@
 require "boxing_moves"
 
-module BoxingCircuit
+module Circuits
 
   describe BoxingMoves do
 

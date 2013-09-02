@@ -1,4 +1,4 @@
-module BoxingCircuit
+module Circuits
 
   class BoxingMoves
 
