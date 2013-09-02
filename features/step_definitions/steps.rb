@@ -6,7 +6,8 @@ end
 
 When(/^I generate a program with (\d) rounds with (\d) sequences$/) do |number_of_rounds, number_of_sequences|
   @expected_number_of_rounds = number_of_rounds.to_i
-  @workout = Circuits::BoxingCircuit.new.create_workout(@expected_number_of_rounds)
+  @expected_number_of_sequences = number_of_sequences.to_i
+  @workout = Circuits::BoxingCircuit.new.create_workout(@expected_number_of_rounds, @expected_number_of_sequences)
 end
 
 Then(/^the workout contains the correct number of rounds$/) do
@@ -14,7 +15,9 @@ Then(/^the workout contains the correct number of rounds$/) do
 end
 
 Then(/^each round contains the correct number of sequences$/) do
-  pending # express the regexp above with the code you wish you had
+  @workout.each do |round|
+    round.length.should be @expected_number_of_sequences
+  end
 end
 
 Then(/^the first round consists only of punches$/) do
