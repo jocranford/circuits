@@ -3,18 +3,22 @@ Boxing Circuits
 Requirements
 
 1. Output a round of 4 sequences of boxing movements
-  a. A round contains between 1-5 movements
-  b. Some movements may only be part of a round with minimum 2 movements (e.g. jab) 
+  a. A sequence contains between 1-5 movements [1,2,3,4,5]
+  b. Some movements may only be part of a sequence with minimum 2 movements (e.g. jab) 
   c. There is a maximum of one sequence in a round with only 1 movement
-  d. At least one sequence in a round has 4 or 5 movements
+  d. At least one sequence in a round has 4 or 5 movements (maximum of 3 sequences in a round with less than 4 moves)
+  e. At least one sequence in a round has 1 or 2 movements (maximum of 3 sequences in a round with more than 2 moves)
+  f. Round 1 has no sequences of 1 move 
 
 2. Output a session with 5 rounds 
   a. Each sequence cannot be repeated more than twice through the session
 
 3. First round is punches only
 
-4. Second round must include kicks in all sequences
-  a. At least 2 rounds have sequences with 2 or more kicks
+3.1. Second round includes at least two sequences with kicks / knees
+
+4. Third round must include kicks in all sequences
+  a. At least 2 sequences only have kicks / knees
 
 5. Include exercises between rounds
   a. Four breaks: stretch, cardio, stretch, cardio

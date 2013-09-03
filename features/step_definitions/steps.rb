@@ -20,6 +20,16 @@ Then(/^each round contains the correct number of sequences$/) do
   end
 end
 
+Then(/^each sequence consists of between (\d+) and (\d+) moves$/) do |minimum, maximum|
+  @workout.each do |round|
+    round.each do |sequence|
+      number_of_moves = sequence.to_s.split(",").size
+      number_of_moves.should be >= minimum.to_i
+      number_of_moves.should be <= maximum.to_i
+    end
+  end
+end
+
 Then(/^the first round consists only of punches$/) do
   pending # express the regexp above with the code you wish you had
 end
@@ -37,9 +47,5 @@ Then(/^the first and third interim exercises are stretches$/) do
 end
 
 Then(/^the second and last interim exercises are cardio$/) do
-  pending # express the regexp above with the code you wish you had
-end
-
-Then(/^each sequence consists of between (\d+) and (\d+) moves$/) do |arg1, arg2|
   pending # express the regexp above with the code you wish you had
 end

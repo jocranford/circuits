@@ -1,31 +1,47 @@
 {
   "standardMoves" : [
     {
-      "name": "punch to face"
+      "name": "punch to face",
+      "minimum_moves_in_sequence": 2,
+      "type": "punch"
     },
     {
-      "name": "punch to stomach"
+      "name": "punch to stomach",
+      "minimum_moves_in_sequence": 2,
+      "type": "punch"
     },
     {
-      "name": "hook"
+      "name": "hook",
+      "minimum_moves_in_sequence": 2,
+      "type": "punch"
     },
     {
-      "name": "kick to knee"
+      "name": "kick to knee",
+      "minimum_moves_in_sequence": 1,
+      "type":"kick"
     },
     {
-      "name": "knee"
+      "name": "knee",
+      "minimum_moves_in_sequence": 1,
+      "type":"kick"
     },
     {
-      "name": "high kick"
+      "name": "high kick",
+      "minimum_moves_in_sequence": 1,
+      "type":"kick"
     },
     {
-      "name": "front kick"
+      "name": "front kick",
+      "minimum_moves_in_sequence": 1,
+      "type":"kick"
     },
     {
-      "name": "elbow"
+      "name": "elbow",
+      "minimum_moves_in_sequence": 1,
+      "type": "elbow"
     }
   ],
-  "concurrentMoves" :[
+  "constantMoves" :[
     {
       "name": "With one hand: high punch, low punch"
     },
